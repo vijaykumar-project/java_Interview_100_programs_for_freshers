@@ -1,0 +1,20 @@
+public class Amicable {
+    public static void main(String[] args) {
+        int a=220;
+        int b=284;
+        System.out.println(isAmicable(a, b));
+    }
+static boolean isAmicable(int a,int b){
+    return (sumOfDivisor(a)==b&&sumOfDivisor(b)==a);
+}
+
+static int sumOfDivisor(int num){
+int sum=0;
+    for(int i=1;i<=num/2;i++){
+        if (num%i==0) {
+            sum+=i;
+        }
+    }
+    return sum;
+}
+}
