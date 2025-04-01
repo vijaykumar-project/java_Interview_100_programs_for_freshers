@@ -33,8 +33,4 @@ public class HallowHourPattern {
             System.out.println();
         }
     }
-}
-
-        
-    }
-}
+}  
